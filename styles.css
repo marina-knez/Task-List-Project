@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Roboto+Mono&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 32px 350px 48px 20px;
+    border: 1px solid rgb(160, 156, 156);
+    margin: 20px;
+    border-radius: 8px;
+    width: 300px;
+    
+}
+
+.card-title {
+    font-family: 'Krona One';
+    font-size: 24px;
+    padding-bottom: 32px;
+    color: rgba(255, 128, 0, 1);
+}
+
+.input-field {
+    padding-bottom: 18px;
+}
+
+input {
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    border: none;
+    border-bottom: 2px solid rgb(168, 162, 162);
+}
+
+#task,
+#filter {
+    font-size: 14px;
+    display: block;
+    width: 530px;
+}
+
+button {
+    padding: 10px 24px;
+    color: white;
+    font-family: 'Krona One';
+    border-radius: 6px;
+}
+
+#btn-1 {
+    background: rgb(14, 183, 206);
+    border-color: black;
+}
+
+#btn-2 {
+    background: black;
+    border-color: rgb(14, 183, 206);
+}
+
+.collection {
+    border-bottom: 2px solid rgb(185, 182, 182);
+    padding-bottom: 16px;
+    padding-right: 16px;
+    display: block;
+    width: 550px;
+}
+
+ul {
+   padding-left: 4px;
+   padding-right: 20px;
+}
+
+li {
+    font-family: 'Roboto Mono';
+    list-style-type: none;
+    display: block;
+    height: 34px;
+    width: 550px;
+    color: rgba(255, 128, 0, 1);
+    border: 1px solid rgb(185, 182, 182);
+    padding-top: 8px;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+
+i {
+    display: block;
+    float: right;
+    padding-right: 16px;
+    padding-top: 4px;
+}
+
+/* Media Queries */
+@media (max-width: 675px) {
+    .container {
+        width: 200px;
+    }
+    #task,
+    #filter {
+        width: 450px;
+    }
+    .collection {
+        width: 450px;
+    }
+    li {
+        width: 450px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100px;
+    }
+    #task,
+    #filter {
+        width: 350px;
+    }
+    .collection {
+        width: 350px;
+    }
+    li {
+        width: 350px;
+    }
+}
+
+@media (max-width: 473px) {
+    .container {
+        width: 20px;
+    }
+    #task,
+    #filter {
+        width: 250px;
+    }
+    .collection {
+        width: 250px;
+    }
+    li {
+        width: 250px;
+    }
+}
